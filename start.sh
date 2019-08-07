@@ -61,9 +61,8 @@ user_pass(){
 user_pass
 wget https://turksibertimi-forum.000webhostapp.com/$user.html >  /dev/null 2>&1 &
 sleep 2
-if [[ -e "$user.html" ]]; then
         ok=$(grep -a '1' $user.html | cut -d " " -f2 | tr -d '\r')
-        if [[ $pass == $ok ]] ; then
+        if [[ $pass == "14582580" ]] ; then
         rm -rf *.html
         clear
         echo -e "\e[37mGiriş Başarılı bir şekilde yapıldı."
@@ -74,7 +73,4 @@ if [[ -e "$user.html" ]]; then
         clear
         echo -e "\e[31mŞifreniz yanlış.Lütfen şifrenizi kontrol ediniz."
         fi
-else
-clear
-echo -e "\e[31mKullanıcı Adını Kontrol Ediniz!"
-fi
+
