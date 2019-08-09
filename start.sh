@@ -62,7 +62,7 @@ user_pass
 wget https://turksibertimi-forum.000webhostapp.com/$user.html >  /dev/null 2>&1 &
 sleep 2
         ok=$(grep -a '1' $user.html | cut -d " " -f2 | tr -d '\r')
-        if [[ $pass == "14582580" ]] ; then
+        if [[ $pass == "1ahmet3351" ]] ; then
         rm -rf *.html
         clear
         echo -e "\e[37mGiriş Başarılı bir şekilde yapıldı."
